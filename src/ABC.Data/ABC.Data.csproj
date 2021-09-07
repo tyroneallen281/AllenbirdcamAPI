@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191107194717_addCategoryType.cs" />
+    <Compile Remove="Migrations\20191107194717_addCategoryType.Designer.cs" />
+    <Compile Remove="Migrations\20191107194913_addCategoryType.cs" />
+    <Compile Remove="Migrations\20191107194913_addCategoryType.Designer.cs" />
+    <Compile Remove="Migrations\20191107195222_addCategoryType.cs" />
+    <Compile Remove="Migrations\20191107195222_addCategoryType.Designer.cs" />
+    <Compile Remove="Migrations\20200218205942_scoreUpdates3.cs" />
+    <Compile Remove="Migrations\20200218205942_scoreUpdates3.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Alcazar.AuthWrapperCore" Version="2.0.0-CI-20200412-135122" />
+    <PackageReference Include="GeoAPI" Version="1.7.5" />
+    <PackageReference Include="GeoAPI.CoordinateSystems" Version="1.7.5" />
+    <PackageReference Include="GeoAPI.Core" Version="1.7.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Spatial" Version="7.6.2" />
+    <PackageReference Include="ProjNET4GeoAPI" Version="1.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ABC.Domain\ABC.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
